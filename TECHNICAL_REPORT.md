@@ -519,10 +519,10 @@ This work advances the state of formal verification in blockchain consensus prot
 
 ---
 
-**Authors**: Alpenglow Formal Verification Challenge Team  
-**Date**: September 2025  
+**Authors**: N DIVIJ
+**Date**: 26 September 2025  
 **License**: Apache 2.0  
-**Repository**: https://github.com/formal-verification/alpenglow-challenge
+**Repository**: https://github.com/N-45div/Formal-Verification-Solana-Alpenglow-Consensus-Protocol
 
 ---
 
