@@ -1,0 +1,217 @@
+# Alpenglow Formal Verification - .gitignore
+
+# ==============================================================================
+# TLA+ Model Checker Files
+# ==============================================================================
+
+# TLC generated files
+states/
+*.st
+*.fp
+*.dot
+*.out
+*.log
+
+# TLA+ temporary files
+*.toolbox/
+*.launch
+*.cfg~
+*.tla~
+
+# TLC state files and traces
+MC.tla
+MC.cfg
+*.trace
+
+# ==============================================================================
+# Rust/Stateright Files  
+# ==============================================================================
+
+# Rust build artifacts
+stateright/target/
+stateright/Cargo.lock
+
+# Rust temporary files
+**/*.rs.bk
+*.pdb
+
+# ==============================================================================
+# Java Files (TLA+ Tools)
+# ==============================================================================
+
+# Java class files
+*.class
+
+# Java package files
+*.jar
+!tla2tools.jar
+
+# Java log files
+*.log
+
+# ==============================================================================
+# IDE and Editor Files
+# ==============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ==============================================================================
+# Operating System Files
+# ==============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# Temporary and Cache Files
+# ==============================================================================
+
+# General temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# Cache directories
+.cache/
+cache/
+
+# ==============================================================================
+# Documentation Build Files
+# ==============================================================================
+
+# Markdown processors
+*.html
+*.pdf
+!README.md
+!TECHNICAL_REPORT.md
+!white.md
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+
+# ==============================================================================
+# Verification Output Files
+# ==============================================================================
+
+# Large verification output files
+verification_output/
+model_checking_results/
+*.verification
+*.stats
+
+# Performance benchmarks
+benchmarks/
+*.bench
+
+# ==============================================================================
+# Security and Sensitive Files
+# ==============================================================================
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# API keys and secrets
+secrets/
+*.key
+*.pem
+*.p12
+
+# ==============================================================================
+# Project Specific
+# ==============================================================================
+
+# Large state exploration files (keep small examples)
+/states/
+large_model_results/
+
+# Temporary verification files
+temp_verification/
+scratch/
+
+# Build artifacts
+build/
+dist/
+
+# ==============================================================================
+# Keep Important Files (Explicit Inclusions)
+# ==============================================================================
+
+# Force include important files even if they match patterns above
+!LICENSE
+!README.md
+!TECHNICAL_REPORT.md
+!white.md
+!tla/*.tla
+!tla/*.cfg
+!stateright/src/*.rs
+!stateright/Cargo.toml
+!docs/*.md
+
+# Force include small configuration examples
+!examples/
+!samples/

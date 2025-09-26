@@ -1,0 +1,24 @@
+[package]
+name = "alpenglow-formal-verification"
+version = "0.1.0"
+edition = "2021"
+authors = ["Alpenglow Formal Verification Challenge Team"]
+license = "Apache-2.0"
+description = "Stateright validation model for Alpenglow consensus protocol"
+
+[dependencies]
+stateright = "0.31"
+serde = { version = "1.0", features = ["derive"] }
+rand = "0.8"
+num_cpus = "1.0"
+
+[dev-dependencies]
+env_logger = "0.10"
+
+[[bin]]
+name = "alpenglow_explorer"
+path = "src/bin/explorer.rs"
+
+[lib]
+name = "alpenglow_verification"
+path = "src/lib.rs"
