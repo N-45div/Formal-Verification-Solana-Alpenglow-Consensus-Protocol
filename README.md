@@ -75,7 +75,6 @@ We used both TLA+ and Stateright to get the best of both worlds:
 ```
 ├── README.md                 # Project overview and results
 ├── TECHNICAL_REPORT.md       # Comprehensive technical report (main deliverable)
-├── white.md                  # Alpenglow whitepaper (converted to markdown)
 ├── tla/                      # TLA+ formal specifications
 │   ├── Alpenglow.tla        # Main protocol specification (394 lines)
 │   ├── Votor.tla            # Consensus voting logic (detailed)
@@ -119,8 +118,8 @@ We used both TLA+ and Stateright to get the best of both worlds:
 ### **Quick Start**
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd formal-verification
+git clone https://github.com/N-45div/Formal-Verification-Solana-Alpenglow-Consensus-Protocol.git
+cd Formal-Verification-Solana-Alpenglow-Consensus-Protocol
 
 # Run TLA+ verification
 cd tla
@@ -167,7 +166,6 @@ For detailed technical information, see:
 - **[TECHNICAL_REPORT.md](./TECHNICAL_REPORT.md)** - Comprehensive technical report (main deliverable)
 - **[Verification Results](./docs/verification-results.md)** - Detailed technical breakdown of all test results
 - **[Proof Status](./docs/proof-status.md)** - Status of each theorem and lemma from the whitepaper
-- **[Alpenglow Whitepaper](./white.md)** - The original protocol specification
 
 ## 🤝 **Contributing**
 
@@ -183,4 +181,4 @@ Licensed under the **Apache License, Version 2.0**. See [LICENSE](./LICENSE) for
 
 This comprehensive formal verification demonstrates that **Alpenglow's safety properties are mathematically sound** and provides the formal foundation necessary for deploying this consensus protocol in production environments securing billions of dollars in value.
 
-**Built with ❤️ for the Solana ecosystem and formal verification community**
+**Built for the Solana ecosystem and formal verification community**
