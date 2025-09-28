@@ -70,27 +70,6 @@ We used both TLA+ and Stateright to get the best of both worlds:
 
 **Why Some Properties Are "Specified" vs "Verified"**: Temporal logic verification (liveness properties) is computationally exponential. Our complete specifications provide the mathematical foundation, while statistical validation through Stateright confirms the logic works in practice.
 
-## 📁 Repository Structure
-
-```
-├── README.md                 # Project overview and results
-├── TECHNICAL_REPORT.md       # Comprehensive technical report (main deliverable)
-├── tla/                      # TLA+ formal specifications
-│   ├── Alpenglow.tla        # Main protocol specification (394 lines)
-│   ├── Votor.tla            # Consensus voting logic (detailed)
-│   └── Models/              # Model checker configurations
-├── stateright/              # Stateright performance validation
-│   ├── Cargo.toml           # Rust project configuration
-│   └── src/                 # Implementation models
-│       ├── lib.rs           # Main system model
-│       ├── votor.rs         # Voting mechanisms
-│       └── rotor.rs         # Block propagation
-├── docs/                    # Supporting technical documentation
-│   ├── verification-results.md # Detailed results breakdown
-│   └── proof-status.md      # Status of each theorem/lemma
-└── LICENSE                  # Apache 2.0 License (open source)
-```
-
 ## 🎯 **Core Theorems from Alpenglow Whitepaper**
 
 ### **Theorem 1: Safety - NO CONFLICTING BLOCKS ✅ PROVEN**
@@ -176,9 +155,5 @@ This project is part of the **Alpenglow Formal Verification Challenge**. The cod
 Licensed under the **Apache License, Version 2.0**. See [LICENSE](./LICENSE) for full details.
 
 ---
-
-## 🎉 **Ready for Challenge Submission**
-
-This comprehensive formal verification demonstrates that **Alpenglow's safety properties are mathematically sound** and provides the formal foundation necessary for deploying this consensus protocol in production environments securing billions of dollars in value.
 
 **Built for the Solana ecosystem and formal verification community**
