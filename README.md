@@ -102,7 +102,7 @@ cd Formal-Verification-Solana-Alpenglow-Consensus-Protocol
 
 # Run TLA+ verification
 cd tla
-java -jar tla2tools.jar -config Models/Alpenglow.cfg Alpenglow.tla
+java -jar ../tla2tools.jar -config Models/Alpenglow.cfg Alpenglow.tla
 
 # Run Stateright tests  
 cd ../stateright
