@@ -1,3 +1,4 @@
+```mermaid
 graph TB
     subgraph "5-Node Network"
         N1[Node 1<br/>Honest]
@@ -46,3 +47,4 @@ graph TB
     style A1 fill:#FFE5E5
     style A2 fill:#FFE5E5
     style A3 fill:#FFE5E5
+```

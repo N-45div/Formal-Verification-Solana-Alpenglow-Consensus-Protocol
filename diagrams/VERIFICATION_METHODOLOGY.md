@@ -1,3 +1,4 @@
+```mermaid
 graph LR
     subgraph "Input"
         WP[Alpenglow Whitepaper<br/>3 Theorems<br/>47 Lemmas<br/>4 Algorithms]
@@ -36,3 +37,4 @@ graph LR
     style SAFETY fill:#90EE90
     style LIVENESS fill:#98FB98
     style BYZ fill:#00FA9A
+```

@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     subgraph "Leader Node"
         L[Block Data<br/>1MB]
@@ -54,3 +55,4 @@ graph TD
     style REC2 fill:#90EE90
     style REC3 fill:#90EE90
     style REC4 fill:#90EE90
+```

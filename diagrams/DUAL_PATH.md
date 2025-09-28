@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     A[Block Proposed] --> B{Stake Participation}
     B -->|≥80% Stake| C[Fast Path]
@@ -19,3 +20,4 @@ graph TD
     style D fill:#FFB6C1
     style G fill:#32CD32
     style M fill:#FF69B4
+```
