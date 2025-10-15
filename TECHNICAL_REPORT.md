@@ -518,13 +518,10 @@ This work advances the state of formal verification in blockchain consensus prot
 ### Appendix C: Verification Results and Logs
 [Available in repository: `/docs/verification-results.md`]
 
-### Appendix D: Whitepaper Algorithm Mapping
-[Complete mapping of whitepaper algorithms to formal specifications]
 
 ---
 
-**Authors**: N DIVIJ
-**Date**: 26 September 2025  
+**Authors**: N DIVIJ 
 **License**: Apache 2.0  
 **Repository**: https://github.com/N-45div/Formal-Verification-Solana-Alpenglow-Consensus-Protocol
 
