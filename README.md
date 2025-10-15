@@ -96,7 +96,7 @@ We used both TLA+ and Stateright to get the best of both worlds:
 - **Rust**: Install from [rustup.rs](https://rustup.rs/)
 - **Java 8+**: Required for TLA+ model checker
 
-### **Running Verification Tests (For Judges)**
+### **Running Verification Tests **
 
 #### **Prerequisites**
 ```bash
