@@ -142,7 +142,7 @@ java -XX:+UseParallelGC -jar ../tla2tools.jar -config Models/LivenessMinimal.cfg
 #### **Test 3: Statistical Validation (Stateright)**
 Cross-validates properties with high-performance model checking
 ```bash
-cd ../stateright
+cd ./stateright
 cargo test --lib
 ```
 **Expected Result**:
@@ -162,16 +162,16 @@ cargo test --lib
 #### **Quick Verification (All Tests)**
 Run all verifications in sequence:
 ```bash
-cd /path/to/Formal-Verification-Solana-Alpenglow-Consensus-Protocol
+cd Formal-Verification-Solana-Alpenglow-Consensus-Protocol
 
 # Safety verification
 cd tla && java -XX:+UseParallelGC -jar ../tla2tools.jar -config Models/Alpenglow.cfg Alpenglow.tla
 
 # Liveness verification
-java -XX:+UseParallelGC -jar ../tla2tools.jar -config Models/LivenessMinimal.cfg Alpenglow.tla
+java -XX:+UseParallelGC -jar -Xmx4G  tla2tools.jar -config tla/Models/Alpenglow.cfg tla/Alpenglow.tla
 
 # Statistical validation
-cd ./stateright && cargo test --lib
+cd stateright && cargo test --lib
 ```
 
 #### **Troubleshooting**
