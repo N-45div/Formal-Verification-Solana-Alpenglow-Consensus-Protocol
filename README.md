@@ -12,23 +12,6 @@ This repository contains a comprehensive formal verification of Solana's **Alpen
 ✅ **Liveness Properties Specified** - Progress guarantees formally defined  
 ✅ **Comprehensive Testing** - Both mathematical proofs and statistical validation  
 
-## ⚡ **For Judges: Quick Verification**
-
-**Want to verify our results immediately?** Run these three commands:
-
-```bash
-# 1. Safety (5 nodes, Byzantine) - ~3 minutes
-cd tla && java -XX:+UseParallelGC -jar ../tla2tools.jar -config Models/Alpenglow.cfg Alpenglow.tla
-
-# 2. Liveness (Theorem 2) - ~1 minute  
-java -XX:+UseParallelGC -jar ../tla2tools.jar -config Models/LivenessMinimal.cfg Alpenglow.tla
-
-# 3. Statistical validation - <1 second
-cd ../stateright && cargo test --lib
-```
-
-**Expected**: All tests pass with 0 errors. Total runtime: ~4-5 minutes. See detailed instructions below.
-
 ---
 
 ## 📋 **Challenge Requirements Completion**
@@ -226,4 +209,3 @@ Licensed under the **Apache License, Version 2.0**. See [LICENSE](./LICENSE) for
 
 ---
 
-**Built for the Solana ecosystem and formal verification community**
